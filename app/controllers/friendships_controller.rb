@@ -10,9 +10,9 @@ class FriendshipsController < ApplicationController
   def accept
     if @user.requested_friends.include?(@friend)
       Friendship.accept(@user, @friend)
-      flash[:notice] = "Friend accepted!"
+      flash[:notice] = 'Friend accepted!'
     else
-      flash[:notice] = "No friendship available."
+      flash[:notice] = 'No friendship available.'
     end
     redirect_to user_path(@friend)
   end
@@ -20,9 +20,9 @@ class FriendshipsController < ApplicationController
   def decline
     if @user.requested_friends.include?(@friend)
       Friendship.breakup(@user, @friend)
-      flash[:notice] = "Friend declined"
+      flash[:notice] = 'Friend declined'
     else
-      flash[:notice] = "No friendship available."
+      flash[:notice] = 'No friendship available.'
     end
     redirect_to user_path(@friend)
   end
@@ -32,7 +32,7 @@ class FriendshipsController < ApplicationController
       Friendship.breakup(@user, @friend)
       flash[:notice] = 'Friendship request canceled.'
     else
-      flash[:notice] = "No friendship available."
+      flash[:notice] = 'No friendship available.'
     end
     redirect_to user_path(@friend)
   end
@@ -40,9 +40,9 @@ class FriendshipsController < ApplicationController
   def delete
     if @user.friends.include?(@friend)
       Friendship.breakup(@user, @friend)
-      flash[:notice] = "Friend deleted!"
+      flash[:notice] = 'Friend deleted!'
     else
-      flash[:notice] = "You are not friend with this person."
+      flash[:notice] = 'You are not friend with this person.'
     end
     redirect_to user_path(@friend)
   end

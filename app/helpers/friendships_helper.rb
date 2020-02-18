@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module FriendshipsHelper
   # Return an appropriate friendship status message.
   def friendship_status(user, friend)
