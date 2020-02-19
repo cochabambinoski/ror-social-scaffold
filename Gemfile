@@ -44,7 +44,13 @@ group :development, :test do
 end
 
 group :test do
+  gem 'capybara'
   gem 'rspec-rails'
+  gem 'selenium-webdriver'
+  gem 'guard'
+  gem 'guard-minitest'
+  gem 'rb-readline'
+  gem 'webdrivers'
 end
 
 group :development do
