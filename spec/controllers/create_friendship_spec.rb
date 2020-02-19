@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'rails_helper'
 require 'spec_helper'
 
@@ -15,6 +13,5 @@ RSpec.describe 'UsersLogins', type: :request do
     it 'Successful Friendship' do
       expect(@friendship).to be_valid
     end
-
   end
 end
