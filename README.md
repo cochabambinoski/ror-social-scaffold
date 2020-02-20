@@ -1,85 +1,52 @@
-# Scaffold for social media app with Ruby on Rails
-
-> This repo includes intial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students.
-
-## Built With
-
-- Ruby v2.7.0
-- Ruby on Rails v5.2.4
-
-## Live Demo
-
-TBA
+# Project: Association
 
 
-## Getting Started
+## [Collaborative Project]
 
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-Ruby: 2.6.3
-Rails: 5.2.3
-Postgres: >=9.5
-
-### Setup
-
-Instal gems with:
-
-```
-bundle install
-```
-
-Setup database with:
-
-```
-   rails db:create
-   rails db:migrate
-```
+This project requests you to build on the top of existing project.
 
 
+## Additional Microverse Adjustments
 
-### Usage
+### General
 
-Start server with:
+- Add descriptive README file to your repositories.
+- Use meaningful names for your Pull Requests and add a short summary of its content.
+- Use descriptive commit messages.
+- Do not commit files that are not related to the project. Instead, add them to [.gitignore file].
+- Do not commit inline comments. They will make your project look messy. If you need to review a previous version of your code, you can always use git history.
 
-```
-    rails server
-```
+### Project specific
 
-Open `http://localhost:3000/` in your browser.
+Before you start working on this project, familiarize yourself with the MVP term. Please keep it in mind - first, you want to build something simple that will work. After the core features are implemented, you can improve your app.
 
-### Run tests
+Here is a description of business requirements for your app:
 
-```
-    rpsec --format documentation
-```
+We need to build a social media app called “Stay in touch”.
 
-> Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
+As a guest user:
 
-### Deployment
+- I want to be able to create account/log in.
+- I can see only “Sign in” and “Sign out” page.
 
-TBA
+As a logged-in user:
 
-## Authors
+- I want to be able to see all users list.
+- I want to be able to see selected user page with their user name and all posts written by them (the most recent posts on the top).
+- I want to be able to send a friendship invitation.
+- I want to see a button “Invite to friendship” next to the name of user who is not my friend yet - on both users’ list and single user page.
+- I want to be able to see pending friendship invitations sent to me from other users.
+- I want to be able to accept or reject friendships invitation.
+- I want to be able to create new posts (text only).
+- I want to be able to like/dislike posts (but I can like single post only once).
+- I want to be able to add comments to posts.
+- I want to be able to see “Timeline” page with posts (with number of likes and comments) written by me and all my friends (the most recent posts on the top).
+- Timeline page should be the root page of the app.
 
-TBA
+## Repositories
 
-## 🤝 Contributing
+- https://github.com/cochabambinoski/ror-social-scaffold
 
-Contributions, issues and feature requests are welcome!
+## Live version
 
-Feel free to check the [issues page](issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-TBA
-
-## 📝 License
-
-TBA
-
+- https://polar-temple-76308.herokuapp.com/
