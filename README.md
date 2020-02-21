@@ -45,6 +45,8 @@ As a logged-in user:
 
 ## Repositories
 
+Feber
+
 - https://github.com/cochabambinoski/ror-social-scaffold
 
 ## Live version
